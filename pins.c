@@ -288,57 +288,57 @@ int digitalRead(char *str)
 {
 	if(str[1]=='A')
 	{
-		return(PINA&&(1<<(str[3]-48)));
+		return(PINA&(1<<(str[3]-48)));
 	}
 	
 	else if(str[1]=='B')
 	{
-		return(PINB&&(1<<(str[3]-48)));
+		return(PINB&(1<<(str[3]-48)));
 	}
 	
 	else if(str[1]=='C')
 	{
-		return(PINC&&(1<<(str[3]-48)));
+		return(PINC&(1<<(str[3]-48)));
 	}
 	
 	else if(str[1]=='D')
 	{
-		return(PIND&&(1<<(str[3]-48)));
+		return(PIND&(1<<(str[3]-48)));
 	}
 	
 	else if(str[1]=='E')
 	{
-		return(PINE&&(1<<(str[3]-48)));
+		return(PINE&(1<<(str[3]-48)));
 	}
 	
 	else if(str[1]=='F')
 	{
-		return(PINF&&(1<<(str[3]-48)));
+		return(PINF&(1<<(str[3]-48)));
 	}
 	
 	else if(str[1]=='G')
 	{
-		return(PING&&(1<<(str[3]-48)));
+		return(PING&(1<<(str[3]-48)));
 	}
 	
 	else if(str[1]=='H')
 	{
-		return(PINH&&(1<<(str[3]-48)));
+		return(PINH&(1<<(str[3]-48)));
 	}
 	
 	else if(str[1]=='J')
 	{
-		return(PINJ&&(1<<(str[3]-48)));
+		return(PINJ&(1<<(str[3]-48)));
 	}
 	
 	else if(str[1]=='K')
 	{
-		return(PINK&&(1<<(str[3]-48)));
+		return(PINK&(1<<(str[3]-48)));
 	}
 	
 	else if(str[1]=='L')
 	{
-		return(PINL&&(1<<(str[3]-48)));
+		return(PINL&(1<<(str[3]-48)));
 	}
 	
 	return 0;
